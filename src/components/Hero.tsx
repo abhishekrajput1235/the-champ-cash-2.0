@@ -151,7 +151,7 @@ const Hero: React.FC = () => {
         ref={heroRef}
         className="container mx-auto px-4 md:px-6 relative z-10 transition-transform duration-300 ease-out"
       >
-        <div className="text-center max-w-5xl mx-auto pt-10 md:pt-36">
+        <div className="text-center max-w-5xl mx-auto pt-36 md:pt-0">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block transform transition-transform bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-300">
               Welcome to TCC 2.0
