@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 // import Logo from './Logo';
 import Logo from '../images/LogoChamp.png'
@@ -50,12 +50,14 @@ const Navbar: React.FC = () => {
           </div> */}
 <div className="hidden md:flex items-center space-x-8">
   <NavLinks isScrolled={isScrolled} />
-  <HashLink 
+  {/* <HashLink 
     to="/#join"
     className="bg-gradient-to-r from-yellow-500 to-amber-400 text-black px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[rgb(185, 255, 100)] border-2 border-[rgb(255,165,0)] hover:border-[rgb(0,255,255)]"
   >
     Get Started
-  </HashLink>
+  </HashLink> */}
+  <button type="button" className="mt-2 text-yellow-400 hover:text-black border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium  text-sm px-5 py-2 rounded-full text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-black dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Get Started</button>
+
 </div>
 
 
@@ -118,7 +120,7 @@ const NavLinks: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => {
         <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black/95 backdrop-blur-sm ring-1 ring-yellow-500/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="py-1">
             <a href="/#product1" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Private Sale</a>
-            <a href="champ-trade" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Champ Trade</a>
+            <a href="champ-trade" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">CHAMP TRADE</a>
           </div>
         </div>
       </div>
@@ -155,8 +157,8 @@ const MobileNavLinks: React.FC<{ setIsOpen: (value: boolean) => void }> = ({ set
           Products <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${productsOpen ? 'transform rotate-180' : ''}`} />
         </button>
         <div className={`pl-4 mt-2 space-y-2 ${productsOpen ? 'block' : 'hidden'}`}>
-          <a href="/#product1" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product One</a>
-          <a href="/champ-trade" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product Two</a>
+          <a href="/#product1" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>PRIVATE SALE</a>
+          <a href="/champ-trade" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>CHAMP TRADE</a>
         </div>
       </div>
       <a
