@@ -34,9 +34,9 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src={Logo} alt="Champ Logo" className='h-14' />
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           {/* <div className="hidden md:flex items-center space-x-8">
@@ -105,9 +105,9 @@ const NavLinks: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => {
   
   return (
     <>
-      <Link to="/" className={linkClass}>
+      <a href="/" className={linkClass}>
         Home
-      </Link>
+      </a>
       <div className="relative group">
         <button 
           className={`${linkClass} flex items-center`}
@@ -117,20 +117,20 @@ const NavLinks: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => {
         </button>
         <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black/95 backdrop-blur-sm ring-1 ring-yellow-500/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="py-1">
-            <HashLink to="/#product1" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Private Sale</HashLink>
-            <HashLink to="/#product2" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Champ Trade</HashLink>
+            <a href="/#product1" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Private Sale</a>
+            <a href="champ-trade" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Champ Trade</a>
           </div>
         </div>
       </div>
-      <Link to="/services" className={linkClass}>
+      <a href="/services" className={linkClass}>
         Services
-      </Link>
-      <Link to="/about" className={linkClass}>
+      </a>
+      <a href="/about" className={linkClass}>
         About
-      </Link>
-      <Link to="/contact" className={linkClass}>
+      </a>
+      <a href="/contact" className={linkClass}>
         Contact
-      </Link>
+      </a>
     </>
   );
 };
@@ -140,13 +140,13 @@ const MobileNavLinks: React.FC<{ setIsOpen: (value: boolean) => void }> = ({ set
   
   return (
     <>
-      <Link
-        to="/"
+      <a
+        href="/"
         className="block font-medium text-white hover:text-yellow-500"
         onClick={() => setIsOpen(false)}
       >
         Home
-      </Link>
+      </a>
       <div>
         <button
           className="flex items-center justify-between w-full font-medium text-white hover:text-yellow-500"
@@ -155,32 +155,31 @@ const MobileNavLinks: React.FC<{ setIsOpen: (value: boolean) => void }> = ({ set
           Products <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${productsOpen ? 'transform rotate-180' : ''}`} />
         </button>
         <div className={`pl-4 mt-2 space-y-2 ${productsOpen ? 'block' : 'hidden'}`}>
-          <HashLink to="/#product1" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product One</HashLink>
-          <HashLink to="/#product2" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product Two</HashLink>
-          <HashLink to="/#product3" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product Three</HashLink>
+          <a href="/#product1" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product One</a>
+          <a href="/champ-trade" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>Product Two</a>
         </div>
       </div>
-      <Link
-        to="/services"
+      <a
+        href="/services"
         className="block font-medium text-white hover:text-yellow-500"
         onClick={() => setIsOpen(false)}
       >
         Services
-      </Link>
-      <Link
-        to="/about"
+      </a>
+      <a
+        href="/about"
         className="block font-medium text-white hover:text-yellow-500"
         onClick={() => setIsOpen(false)}
       >
         About
-      </Link>
-      <Link
-        to="/contact"
+      </a>
+      <a
+        href="/contact"
         className="block font-medium text-white hover:text-yellow-500"
         onClick={() => setIsOpen(false)}
       >
         Contact
-      </Link>
+      </a>
     </>
   );
 };

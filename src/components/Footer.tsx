@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <Link to="/" className="mb-4 inline-block">
+            <a href="/" className="mb-4 inline-block">
               <img src={Logo} alt="Logo" className='h-20' />
-            </Link>
+            </a>
             <p className="text-gray-400 mb-6">
               Transforming the future through innovative technology solutions and collaborative development.
             </p>
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} TCC20. All rights reserved.
+              &copy; {new Date().getFullYear()} The Champ Cash 2.O. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <HashLink to="/#terms" className="text-gray-500 hover:text-white transition-colors duration-300">

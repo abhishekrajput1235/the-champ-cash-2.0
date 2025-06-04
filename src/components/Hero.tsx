@@ -183,7 +183,7 @@ const Hero: React.FC = () => {
               Join the Revolution
             </a>
             <a
-              href="#about"
+              href="/about"
               style={{
                 borderColor: 'rgb(255, 215, 0)',
                 color: 'rgb(255, 215, 0)',
