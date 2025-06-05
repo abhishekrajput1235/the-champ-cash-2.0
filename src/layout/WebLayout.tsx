@@ -1,15 +1,16 @@
-// import { Outlet } from "react-router-dom";
-// import WebNavbar from "../components/WebNavbar";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
-// const WebLayout = () => {
-//   return (
-//     <>
-//       <WebNavbar />
-//       <main>
-//         <Outlet />
-//       </main>
-//     </>
-//   );
-// };
+const WebLayout = () => {
+  return (
+    <>
+      <Navbar />
+     
+      <main>
+        <Outlet />
+      </main>
+    </>
+  );
+};
 
-// export default WebLayout;
+export default WebLayout;

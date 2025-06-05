@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import {  useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-// import Logo from './Logo';
 import Logo from '../images/LogoChamp.png'
+
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,15 +50,10 @@ const Navbar: React.FC = () => {
           </div> */}
 <div className="hidden md:flex items-center space-x-8">
   <NavLinks isScrolled={isScrolled} />
-  {/* <HashLink 
-    to="/#join"
-    className="bg-gradient-to-r from-yellow-500 to-amber-400 text-black px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[rgb(185, 255, 100)] border-2 border-[rgb(255,165,0)] hover:border-[rgb(0,255,255)]"
-  >
-    Get Started
-  </HashLink> */}
-  <button type="button" className="mt-2 text-yellow-400 hover:text-black border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium  text-sm px-5 py-2 rounded-full text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-black dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Get Started</button>
+  <button type="button" className="mt-2 text-yellow-400 hover:text-black border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium  text-sm px-5 py-2 rounded-full text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-black dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Get Started  <appkit-button/></button>
 
 </div>
+
 
 
 
