@@ -14,10 +14,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#facc15', // Yellow-400
-        secondary: '#f59e0b', // Amber-500
-        dark: '#0f0f0f',
-        gold: '#FFD700', // Gold color for accents
+        'primary': '#facc15', // Yellow-400
+        'secondary': '#f59e0b', // Amber-500
+        'dark': '#0f0f0f',
+        'gold': '#FFD700', // Gold color for accents
+        'dark-green': '#1a1f1c',
+        'dark-green-light': '#22271f',
+        'dark-green-dark': '#151a17',
+        'golden': '#ffd700',
+        'golden-dark': '#ccac00',
+        'golden-white': '#fff5cc',
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',

@@ -175,7 +175,7 @@ function App() {
               </div>
             </div>
             <div className="mt-8">
-              <a href="#" className="bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 text-black text-center py-3 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-blue-600 transition-all">
+              <a href="/go-dashboard" className="bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 text-black text-center py-3 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-blue-600 transition-all">
                 Start Your Journey
               </a>
             </div>
@@ -468,7 +468,7 @@ function App() {
               With ChampTrade, the first step is simple — and the reward is lifelong."
             </blockquote>
             <div className="flex justify-center gap-6">
-              <a href="#join" className="bg-yellow-500 text-black text-lg py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+              <a href="/go-dashboard" className="bg-yellow-500 text-black text-lg py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
                 Join Now
               </a>
               <a href="contact" className="bg-gray-800 text-white text-lg py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors border border-yellow-500/20">

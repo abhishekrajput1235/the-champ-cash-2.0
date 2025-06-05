@@ -9,12 +9,20 @@ if (!projectId) {
   throw new Error('Project ID is not defined')
 }
 
-export const metadata = {
-    name: 'AppKit',
-    description: 'AppKit Example',
-    url: 'https://reown.com', // origin must match your domain & subdomain
-    icons: ['https://avatars.githubusercontent.com/u/179229932']
+// export const metadata = {
+//     name: 'AppKit',
+//     description: 'AppKit Example',
+//     url: 'https://reown.com', // origin must match your domain & subdomain
+//     icons: ['https://avatars.githubusercontent.com/u/179229932']
+//   }
+
+  export const metadata = {
+    name: "TCC 2.0",
+    description: "The Evolution of Digital Earning",
+    url: import.meta.env.PROD ? "https://reown.com" : window.location.origin,
+    icons: ["https://reown.com/favicon.ico"]
   }
+  
 
 // for custom networks visit -> https://docs.reown.com/appkit/react/core/custom-networks
 export const networks = [mainnet, arbitrum, sepolia] as [AppKitNetwork, ...AppKitNetwork[]]

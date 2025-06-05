@@ -1,6 +1,5 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -8,6 +7,21 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import ChampTrade from './pages/ChampTrade';
 import WebLayout from './layout/WebLayout';
+// champtrade dashboard
+
+import LandingPage from './ChampTradepages/LandingPage';
+
+import DashboardOverviewPage from './ChampTradepages/DashboardOverviewPage';
+import MyEarningsPage from './ChampTradepages/MyEarningsPage';
+import MyTeamPage from './ChampTradepages/MyTeamPage';
+import MyReferralsPage from './ChampTradepages/MyReferralsPage';
+import ReinvestmentCyclesPage from './ChampTradepages/ReinvestmentCyclesPage';
+import ClaimWithdrawPage from './ChampTradepages/ClaimWithdrawPage';
+import BuyTccPage from './ChampTradepages/BuyTccPage';
+import SupportTicketsPage from './ChampTradepages/SupportTicketsPage';
+import HelpCenterPage from './ChampTradepages/HelpCenterPage';
+import SettingsPage from './ChampTradepages/SettingsPage';
+
 //wallet connect import libraries
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiProvider } from 'wagmi'
@@ -15,10 +29,10 @@ import { useState } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ActionButtonList } from './providers/ActionButtonList'
 import { SmartContractActionButtonList } from './providers/SmartContractActionButtonList'
-import { InfoList } from './providers/InfoList'
 import { projectId, metadata, networks, wagmiAdapter } from './config'
 
 import "./index.css"
+import DashboardPage from './ChampTradepages/DashboardPage';
 
 const queryClient = new QueryClient()
 
@@ -85,10 +99,10 @@ function App() {
     const style = document.createElement('style');
     style.textContent = floatKeyframes;
     document.head.appendChild(style);
-    
+
     // Update document title
     document.title = 'TCC 2.0 | The Evolution of Digital Earning';
-    
+
     return () => {
       document.head.removeChild(style);
     };
@@ -97,30 +111,39 @@ function App() {
   return (
     <BrowserRouter>
       <div className="relative overflow-hidden">
-      <WagmiProvider config={wagmiAdapter.wagmiConfig}>
-        <QueryClientProvider client={queryClient}>
+        <WagmiProvider config={wagmiAdapter.wagmiConfig}>
+          <QueryClientProvider client={queryClient}>
             {/* <appkit-button /> */}
-            <ActionButtonList sendHash={receiveHash} sendSignMsg={receiveSignedMsg} sendBalance={receivebalance}/>
+            <ActionButtonList sendHash={receiveHash} sendSignMsg={receiveSignedMsg} sendBalance={receivebalance} />
             <SmartContractActionButtonList />
 
-            {/* Website routes start  */}
-        <Routes>
-          {/* ---------Website Layout------- */}
-          <Route element={<WebLayout/>} >
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/champ-trade" element={<ChampTrade/>}/>
-          </Route>
-        </Routes>
-            {/* Website routes end  */}
+            <Routes>
+              {/* Website Layout Routes */}
+              <Route path="/" element={<WebLayout />}>
+                <Route index element={<HomePage />} />
+                <Route path="about" element={<AboutPage />} />
+                <Route path="services" element={<ServicesPage />} />
+                <Route path="contact" element={<ContactPage />} />
+                <Route path="champ-trade" element={<ChampTrade />} />
+              </Route>
+              <Route path='go-dashboard' element={<LandingPage/>}/>
+              {/* Champ Trade Dashboard Layout Routes */}
+              <Route path="/champ-trade-dashboard" element={<DashboardPage />}>
+                <Route index element={<DashboardOverviewPage />} />
+                <Route path="my-earnings" element={<MyEarningsPage />} />
+                <Route path="my-team" element={<MyTeamPage />} />
+                <Route path="my-referrals" element={<MyReferralsPage />} />
+                <Route path="reinvestment" element={<ReinvestmentCyclesPage />} />
+                <Route path="withdraw" element={<ClaimWithdrawPage />} />
+                <Route path="buy-tokens" element={<BuyTccPage />} />
+                <Route path="support" element={<SupportTicketsPage />} />
+                <Route path="help" element={<HelpCenterPage />} />
+                <Route path="settings" element={<SettingsPage />} />
+              </Route>
+            </Routes>
 
-
-        <InfoList hash={transactionHash} signedMsg={signedMsg} balance={balance}/>
-        </QueryClientProvider>
-      </WagmiProvider>
-        <Footer />
+          </QueryClientProvider>
+        </WagmiProvider>
         <ScrollToTop />
       </div>
     </BrowserRouter>
@@ -128,3 +151,6 @@ function App() {
 }
 
 export default App;
+
+
+
