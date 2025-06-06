@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import ChampTrade from './pages/ChampTrade';
 import WebLayout from './layout/WebLayout';
+import AppWrapper from './AppWrapper.tsx';
 // champtrade dashboard
 
 import LandingPage from './ChampTradepages/LandingPage';
@@ -33,6 +34,9 @@ import { projectId, metadata, networks, wagmiAdapter } from './config'
 
 import "./index.css"
 import DashboardPage from './ChampTradepages/DashboardPage';
+import PrivateLandingPage from './privateSalepages/PrivateLandingPage';
+import { DashboardLayout } from './privateSaleComponents/DashboardLayout';
+import PrivateSaleLayout from './layout/PrivateSaleLayout';
 
 const queryClient = new QueryClient()
 
@@ -116,7 +120,9 @@ function App() {
             {/* <appkit-button /> */}
             <ActionButtonList sendHash={receiveHash} sendSignMsg={receiveSignedMsg} sendBalance={receivebalance} />
             <SmartContractActionButtonList />
+            <ScrollToTop />
 
+            <AppWrapper>
             <Routes>
               {/* Website Layout Routes */}
               <Route path="/" element={<WebLayout />}>
@@ -125,8 +131,10 @@ function App() {
                 <Route path="services" element={<ServicesPage />} />
                 <Route path="contact" element={<ContactPage />} />
                 <Route path="champ-trade" element={<ChampTrade />} />
+                {/* <Route path='private-sale-dashboard' element={<PrivateLandingPage />} /> */}
+
               </Route>
-              <Route path='go-dashboard' element={<LandingPage/>}/>
+              <Route path='go-dashboard' element={<LandingPage />} />
               {/* Champ Trade Dashboard Layout Routes */}
               <Route path="/champ-trade-dashboard" element={<DashboardPage />}>
                 <Route index element={<DashboardOverviewPage />} />
@@ -140,8 +148,19 @@ function App() {
                 <Route path="help" element={<HelpCenterPage />} />
                 <Route path="settings" element={<SettingsPage />} />
               </Route>
-            </Routes>
+              {/* private sale routes start from here */}
+              {/* <Route path="/Private-sale-dashboard" element={<PrivateLandingPage />} />
+              <Route path='Private-sale-dashboard/private-dashboard' element={<DashboardLayout/>}/> */}
 
+              <Route path="/Private-sale-dashboard" element={<PrivateSaleLayout />}>
+                <Route index element={<PrivateLandingPage />} />
+                <Route path="private-dashboard" element={<DashboardLayout />}>
+                </Route>
+              </Route>
+
+
+            </Routes>
+            </AppWrapper>
           </QueryClientProvider>
         </WagmiProvider>
         <ScrollToTop />

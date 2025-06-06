@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { Wallet } from 'lucide-react';
 import trade from '../images/trade.png'
 import { useAppKit } from '@reown/appkit/react';
+import { RxDashboard } from "react-icons/rx";
+
 
 function LandingPage() {
   const {open} = useAppKit()
@@ -39,8 +41,9 @@ function LandingPage() {
         {/* Go to Dashboard */}
         <Link
           to="/champ-trade-dashboard"
-          className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors"
+          className="flex items-center justify-center gap-2 inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors "
         >
+          <RxDashboard />
           Go to Dashboard
         </Link>
       </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import Logo from '../images/LogoChamp.png'
 
 
@@ -111,7 +110,7 @@ const NavLinks: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => {
         </button>
         <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black/95 backdrop-blur-sm ring-1 ring-yellow-500/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="py-1">
-            <a href="/#product1" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Private Sale</a>
+            <a href="/Private-sale-dashboard" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">Private Sale</a>
             <a href="champ-trade" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">CHAMP TRADE</a>
           </div>
         </div>
@@ -149,7 +148,7 @@ const MobileNavLinks: React.FC<{ setIsOpen: (value: boolean) => void }> = ({ set
           Products <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${productsOpen ? 'transform rotate-180' : ''}`} />
         </button>
         <div className={`pl-4 mt-2 space-y-2 ${productsOpen ? 'block' : 'hidden'}`}>
-          <a href="/#product1" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>PRIVATE SALE</a>
+          <a href="/Private-sale-dashboard" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>PRIVATE SALE</a>
           <a href="/champ-trade" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>CHAMP TRADE</a>
         </div>
       </div>

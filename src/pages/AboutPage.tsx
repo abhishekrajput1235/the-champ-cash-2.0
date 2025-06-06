@@ -1,8 +1,10 @@
 
 import React from 'react';
-import { Shield, Target, Zap, Star, Users, CheckCircle } from 'lucide-react';
+import { Shield, Target, Zap, Star, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const AboutPage: React.FC = () => {
+  const navigate = useNavigate()
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-neutral-900 to-black py-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -142,7 +144,7 @@ const AboutPage: React.FC = () => {
             <p className="text-neutral-300 text-lg max-w-xl mx-auto mb-6">
               Be a part of TCC 2.0 — where your effort meets innovation. Start your journey today.
             </p>
-            <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg transition">
+            <button onClick={() => navigate('/go-dashboard')} className="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg transition">
               Get Started Now
             </button>
           </section>

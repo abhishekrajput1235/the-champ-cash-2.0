@@ -138,7 +138,7 @@ const WhatIsTCC: React.FC = () => {
     },
     {
       icon: <Users className="w-6 h-6 text-yellow-500" />,
-      title: "7-Level Referral Network",
+      title: "6-Level Referral Network",
       description: "Powerful multi-level referral system for maximum earning potential"
     },
     {

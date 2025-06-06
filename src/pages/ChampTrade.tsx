@@ -22,6 +22,7 @@ import {
 
 import '../css/ChampTrade.css'
 import trade from '../images/trade.png'
+import { FaRegHandPointRight } from "react-icons/fa6";
 
 
 function App() {
@@ -206,6 +207,7 @@ function App() {
             <p className="text-lg md:text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
               Unlock exponential earnings! Earn <span className="text-yellow-300 font-semibold text-xl md:text-2xl">$0.20/day</span> per active user in your team from <strong className="text-white">Level 1</strong> through <strong className="text-white">Level 6</strong>.
             </p>
+            <p className='text-3xl font-bold pb-4 flex items-center gap-4'><FaRegHandPointRight className='text-yellow-500'/> <div>For Example</div></p>
 
             {/* Level Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
@@ -420,11 +422,11 @@ function App() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-center gap-3 text-lg text-gray-300">
                 <CheckCircle className="w-6 h-6 text-yellow-500" />
-                <p>Buy TCC Tokens from Private Sale</p>
+                <p>Buy TCC Tokens from PancakeSwap or Exchange</p>
               </div>
               <div className="flex items-center gap-3 text-lg text-gray-300">
                 <CheckCircle className="w-6 h-6 text-yellow-500" />
-                <p>Activate Your $110 Plan</p>
+                <p>Activate Your $110 Package</p>
               </div>
               <div className="flex items-center gap-3 text-lg text-gray-300">
                 <CheckCircle className="w-6 h-6 text-yellow-500" />

@@ -11,7 +11,7 @@ interface Step {
 const steps: Step[] = [
   {
     icon: <DollarSign className="w-6 h-6 text-yellow-500" />,
-    action: "Join with $110 in BNB",
+    action: "Join with $110 worth TCC",
     outcome: "Activate daily income contract",
     delay: 100
   },
@@ -35,8 +35,8 @@ const steps: Step[] = [
   },
   {
     icon: <Target className="w-6 h-6 text-yellow-500" />,
-    action: "Hit daily cap of $1750",
-    outcome: "Reinvest or hold for market value",
+    action: "Hit daily cap of $1800",
+    outcome: "Reinvest or hold for market value, you can by unlimited package.",
     delay: 900
   }
 ];
@@ -149,7 +149,7 @@ const HowItWorks: React.FC = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="#join"
+            href="/go-dashboard"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-400 text-black rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20"
           >
             Start Your Journey Now
