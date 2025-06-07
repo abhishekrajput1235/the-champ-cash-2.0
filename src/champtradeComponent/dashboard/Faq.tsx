@@ -23,7 +23,7 @@ const faqs = [
   }
 ];
 
-export function FAQSection() {
+export default function Faq() {
   return (
     <div className="bg-[#161818] rounded-2xl shadow-xl p-4 sm:p-8 border border-amber-500/50">
       <h2 className="text-xl sm:text-2xl font-bold mb-6 flex items-center text-yellow-500">

@@ -11,7 +11,6 @@ import AppWrapper from './AppWrapper.tsx';
 // champtrade dashboard
 
 import LandingPage from './ChampTradepages/LandingPage';
-
 import DashboardOverviewPage from './ChampTradepages/DashboardOverviewPage';
 import MyEarningsPage from './ChampTradepages/MyEarningsPage';
 import MyTeamPage from './ChampTradepages/MyTeamPage';
@@ -22,6 +21,8 @@ import BuyTccPage from './ChampTradepages/BuyTccPage';
 import SupportTicketsPage from './ChampTradepages/SupportTicketsPage';
 import HelpCenterPage from './ChampTradepages/HelpCenterPage';
 import SettingsPage from './ChampTradepages/SettingsPage';
+import Faq from './champtradeComponent/dashboard/Faq.tsx';
+import Reward from './champtradeComponent/dashboard/Reward.tsx';
 
 //wallet connect import libraries
 import { createAppKit } from '@reown/appkit/react'
@@ -145,7 +146,9 @@ function App() {
                 <Route path="withdraw" element={<ClaimWithdrawPage />} />
                 <Route path="buy-tokens" element={<BuyTccPage />} />
                 <Route path="support" element={<SupportTicketsPage />} />
+                <Route path="Faq" element={<Faq />} />
                 <Route path="help" element={<HelpCenterPage />} />
+                <Route path="reward" element={<Reward />} />
                 <Route path="settings" element={<SettingsPage />} />
               </Route>
               {/* private sale routes start from here */}

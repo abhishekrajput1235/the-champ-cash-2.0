@@ -52,7 +52,17 @@ export function DashboardLayout() {
       case 'referral':
         return <ReferralSystem userAddress={address ?? undefined} />;
       case 'stats':
-        return <UserStats address={address ?? undefined} />;
+        // return <UserStats address={address ?? undefined} />;
+        return <UserStats
+        address={address ?? undefined}
+        stats={{
+          totalBought: 0,
+          tier1Rewards: 0,
+          tier2Rewards: 0,
+          directReferrals: 0,
+        }}
+      />
+      ;
       case 'leaderboard':
         return <Leaderboard />;
       case 'faq':

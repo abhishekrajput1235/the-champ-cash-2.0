@@ -1,4 +1,4 @@
-import React from 'react';
+
 import MyOverviewWidgets from '../champtradeComponent/dashboard/MyOverviewWidgets';
 import LatestTransactionsPanel from '../champtradeComponent/dashboard/LatestTransactionsPanel';
 import Panel from '../champtradeComponent/dashboard/Panel';

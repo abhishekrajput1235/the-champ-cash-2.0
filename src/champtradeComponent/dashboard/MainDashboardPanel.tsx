@@ -1,4 +1,3 @@
-import React from 'react';
 import { Trophy } from 'lucide-react';
 import MyOverviewWidgets from './MyOverviewWidgets';
 import EarningsBreakdown from './EarningsBreakdown';
