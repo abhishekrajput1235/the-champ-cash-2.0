@@ -56,7 +56,7 @@ const IncomePlan: React.FC = () => {
               <li className="flex items-start">
                 <Timer className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  Invest $110 in BNB and receive $0.50 worth of TCC daily
+                  Invest $110 in TCC and receive $0.50 worth of TCC daily
                 </p>
               </li>
               <li className="flex items-start">
@@ -92,13 +92,13 @@ const IncomePlan: React.FC = () => {
               <li className="flex items-start">
                 <Timer className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  Daily cap of $1750 worth of TCC per user
+                  Daily cap of $1800 worth of TCC per user
                 </p>
               </li>
               <li className="flex items-start">
                 <RefreshCw className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  1 TCC = $0.0445 fixed for reward distribution
+                The value of 1 TCC is based on its current price on PancakeSwap.
                 </p>
               </li>
             </ul>

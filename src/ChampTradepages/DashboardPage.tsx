@@ -1,24 +1,3 @@
-// import React from 'react';
-// import { Outlet } from 'react-router-dom';
-// import DashboardHeader from '../champtradeComponent/dashboard/DashboardHeader';
-// import Sidebar from '../champtradeComponent/dashboard/Sidebar';
-
-// function DashboardPage() {
-//   return (
-//     <div className="min-h-screen bg-dark-green">
-//       <DashboardHeader />
-//       <div className="flex">
-//         <Sidebar />
-//         <main className="flex-1 p-6">
-//           <Outlet />
-//         </main>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default DashboardPage;
-
 import { Outlet } from 'react-router-dom';
 import DashboardHeader from '../champtradeComponent/dashboard/DashboardHeader';
 import Sidebar from '../champtradeComponent/dashboard/Sidebar';

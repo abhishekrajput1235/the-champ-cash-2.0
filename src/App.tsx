@@ -27,17 +27,15 @@ import Reward from './champtradeComponent/dashboard/Reward.tsx';
 //wallet connect import libraries
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiProvider } from 'wagmi'
-import { useState } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { ActionButtonList } from './providers/ActionButtonList'
 import { SmartContractActionButtonList } from './providers/SmartContractActionButtonList'
 import { projectId, metadata, networks, wagmiAdapter } from './config'
 
 import "./index.css"
 import DashboardPage from './ChampTradepages/DashboardPage';
-import PrivateLandingPage from './privateSalepages/PrivateLandingPage';
-import { DashboardLayout } from './privateSaleComponents/DashboardLayout';
-import PrivateSaleLayout from './layout/PrivateSaleLayout';
+// import PrivateLandingPage from './privateSalepages/PrivateLandingPage';
+// import { DashboardLayout } from './privateSaleComponents/DashboardLayout';
+// import PrivateSaleLayout from './layout/PrivateSaleLayout';
 
 const queryClient = new QueryClient()
 
@@ -81,23 +79,6 @@ const floatKeyframes = `
 `;
 
 function App() {
-  const [transactionHash, setTransactionHash] = useState<`0x${string}` | undefined>(undefined);
-  const [signedMsg, setSignedMsg] = useState('');
-  const [balance, setBalance] = useState('');
-  const receiveHash = (hash: `0x${string}`) => {
-    setTransactionHash(hash); // Update the state with the transaction hash
-  };
-
-  const receiveSignedMsg = (signedMsg: string) => {
-    setSignedMsg(signedMsg); // Update the state with the transaction hash
-  };
-
-  const receivebalance = (balance: string) => {
-    setBalance(balance)
-  }
-
-
-
 
   useEffect(() => {
     // Add keyframes to the document
@@ -118,12 +99,10 @@ function App() {
       <div className="relative overflow-hidden">
         <WagmiProvider config={wagmiAdapter.wagmiConfig}>
           <QueryClientProvider client={queryClient}>
-            {/* <appkit-button /> */}
-            <ActionButtonList sendHash={receiveHash} sendSignMsg={receiveSignedMsg} sendBalance={receivebalance} />
             <SmartContractActionButtonList />
             <ScrollToTop />
-
             <AppWrapper>
+              
             <Routes>
               {/* Website Layout Routes */}
               <Route path="/" element={<WebLayout />}>
@@ -132,9 +111,9 @@ function App() {
                 <Route path="services" element={<ServicesPage />} />
                 <Route path="contact" element={<ContactPage />} />
                 <Route path="champ-trade" element={<ChampTrade />} />
-                {/* <Route path='private-sale-dashboard' element={<PrivateLandingPage />} /> */}
-
               </Route>
+
+
               <Route path='go-dashboard' element={<LandingPage />} />
               {/* Champ Trade Dashboard Layout Routes */}
               <Route path="/champ-trade-dashboard" element={<DashboardPage />}>
@@ -151,18 +130,15 @@ function App() {
                 <Route path="reward" element={<Reward />} />
                 <Route path="settings" element={<SettingsPage />} />
               </Route>
-              {/* private sale routes start from here */}
-              {/* <Route path="/Private-sale-dashboard" element={<PrivateLandingPage />} />
-              <Route path='Private-sale-dashboard/private-dashboard' element={<DashboardLayout/>}/> */}
-
-              <Route path="/Private-sale-dashboard" element={<PrivateSaleLayout />}>
+          
+              {/* <Route path="/Private-sale-dashboard" element={<PrivateSaleLayout />}>
                 <Route index element={<PrivateLandingPage />} />
                 <Route path="private-dashboard" element={<DashboardLayout />}>
                 </Route>
-              </Route>
-
-
+              </Route> */}
             </Routes>
+
+
             </AppWrapper>
           </QueryClientProvider>
         </WagmiProvider>
