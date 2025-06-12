@@ -887,7 +887,7 @@ function App() {
               <a href="/whitepaper" className="bg-gray-800 text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors border border-yellow-500/20">
                 Read Full Whitepaper
               </a>
-              <a href="https://t.me/champtrade" className="bg-yellow-500 text-black text-center py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+              <a href="https://t.me/+4nnlkfFemT85Njc1" className="bg-yellow-500 text-black text-center py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
                 Join Our Telegram Group
               </a>
               <a href="https://pancakeswap.finance" className="bg-gray-800 text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors border border-yellow-500/20">

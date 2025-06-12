@@ -111,6 +111,8 @@ const NavLinks: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => {
         <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black/95 backdrop-blur-sm ring-1 ring-yellow-500/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="py-1">
             <a href="champ-trade" className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">CHAMP TRADE</a>
+            <a href="https://stake.tcc20.io" target='_blank' className="block px-4 py-2 text-sm text-neutral-300 hover:text-yellow-500 hover:bg-yellow-500/10">TCC Stake</a>
+
           </div>
         </div>
       </div>
@@ -148,6 +150,8 @@ const MobileNavLinks: React.FC<{ setIsOpen: (value: boolean) => void }> = ({ set
         </button>
         <div className={`pl-4 mt-2 space-y-2 ${productsOpen ? 'block' : 'hidden'}`}>
           <a href="/champ-trade" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>CHAMP TRADE</a>
+          <a href="https:stake.tcc20.io//" className="block text-neutral-400 hover:text-yellow-500" onClick={() => setIsOpen(false)}>TCC Stake</a>
+
         </div>
       </div>
       <a
