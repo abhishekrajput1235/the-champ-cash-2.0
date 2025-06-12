@@ -10,14 +10,14 @@ const AboutPage: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-400 text-center">
-            About TCC 2.0
+            About TCC2.O
           </h1>
 
           {/* Vision Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-white">Our Vision</h2>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              TCC 2.0 envisions a world where digital income is accessible to all—whether you're in a metro city or a rural village. 
+              TCC2.O envisions a world where digital income is accessible to all—whether you're in a metro city or a rural village. 
               We are committed to decentralizing wealth opportunities and making financial freedom achievable through technology and community.
             </p>
           </section>
@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
               </ul>
               <div className="mt-8 text-center">
                 <p className="text-xl text-white font-semibold">
-                  With TCC 2.0, everyone becomes a champion.
+                  With TCC2.O, everyone becomes a champion.
                 </p>
               </div>
             </div>
@@ -85,11 +85,11 @@ const AboutPage: React.FC = () => {
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-white">Our Expanding Ecosystem</h2>
             <p className="text-lg text-neutral-300 mb-4">
-              TCC 2.0 is more than just earnings — it’s a full ecosystem:
+              TCC2.O is more than just earnings — it’s a full ecosystem:
             </p>
             <ul className="space-y-3 text-neutral-300 list-disc list-inside">
               <li>Marketplace integration for digital and physical products</li>
-              <li>Future-ready gaming partnerships using TCC tokens</li>
+              <li>Future-ready gaming partnerships using TCC2.O tokens</li>
               <li>Merchant gateway for real-world payments and rewards</li>
               <li>Community governance through a DAO model</li>
             </ul>
@@ -102,7 +102,7 @@ const AboutPage: React.FC = () => {
     {[
       {
         name: "Aarav Patel",
-        quote: "TCC 2.0 changed how I think about income. It’s reliable, tech-driven, and transparent.",
+        quote: "TCC2.O changed how I think about income. It’s reliable, tech-driven, and transparent.",
       },
       {
         name: "Nisha Verma",
@@ -142,7 +142,7 @@ const AboutPage: React.FC = () => {
           <section className="text-center mt-20">
             <h3 className="text-3xl font-bold text-white mb-4">Join the Digital Revolution</h3>
             <p className="text-neutral-300 text-lg max-w-xl mx-auto mb-6">
-              Be a part of TCC 2.0 — where your effort meets innovation. Start your journey today.
+              Be a part of TCC2.O — where your effort meets innovation. Start your journey today.
             </p>
             <button onClick={() => navigate('/go-dashboard')} className="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg transition">
               Get Started Now

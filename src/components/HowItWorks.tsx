@@ -11,7 +11,7 @@ interface Step {
 const steps: Step[] = [
   {
     icon: <DollarSign className="w-6 h-6 text-yellow-500" />,
-    action: "Join with $110 worth TCC",
+    action: "Join with $110 worth TCC2.O",
     outcome: "Activate daily income contract",
     delay: 100
   },
@@ -23,7 +23,7 @@ const steps: Step[] = [
   },
   {
     icon: <RefreshCw className="w-6 h-6 text-yellow-500" />,
-    action: "Reach $100 worth TCC",
+    action: "Reach $100 worth TCC2.O in three year",
     outcome: "Cycle resets and continues",
     delay: 500
   },

@@ -63,17 +63,17 @@ const RealWorldUtility: React.FC = () => {
     {
       icon: <ShoppingCart size={24} />,
       title: "E-commerce Shopping",
-      description: "Use TCC to shop on partner e-commerce portals (launching soon)",
+      description: "Use TCC2.O  to shop on partner e-commerce portals (launching soon)",
     },
     {
       icon: <Wallet size={24} />,
       title: "Token Swapping",
-      description: "Buy or sell TCC tokens directly on PancakeSwap (BSC DEX)",
+      description: "Buy or sell TCC2.O  tokens directly on PancakeSwap (BSC DEX)",
     },
     {
       icon: <Lock size={24} />,
       title: "Platform Access",
-      description: "Unlock premium content and community features within the TCC ecosystem",
+      description: "Unlock premium content and community features within the TCC2.O  ecosystem",
     },
     {
       icon: <Gamepad2 size={24} />,
@@ -92,10 +92,10 @@ const RealWorldUtility: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-400">
-            Real-World Utility of TCC Token
+            Real-World Utility of TCC2.O Token
           </h2>
           <p className="text-xl text-neutral-300">
-            TCC 2.0 is more than just a reward token. It's a utility asset with real-life usability.
+            TCC2.O is more than just a reward token. It's a utility asset with real-life usability.
           </p>
         </div>
 

@@ -49,7 +49,7 @@
 //           </h1>
 //         </div>
 
-//         <p className="text-2xl text-gray-300 font-semibold">Powered by TCC 2.0</p>
+//         <p className="text-2xl text-gray-300 font-semibold">Powered by TCC2.O 2.0</p>
 //         <p className="text-xl text-yellow-500 mt-2 italic ">Earn like  Champion</p>
 //       </header>
 
@@ -142,9 +142,9 @@
 //                   <span className="text-xl font-bold text-yellow-500">1</span>
 //                 </div>
 //                 <div>
-//                   <h3 className="text-xl font-semibold text-white mb-2">Join with $110 worth of TCC</h3>
+//                   <h3 className="text-xl font-semibold text-white mb-2">Join with $110 worth of TCC2.O</h3>
 //                   <p className="text-lg text-gray-300">
-//                     Activate your plan by contributing $110 in TCC tokens (from private sale or PancakeSwap).
+//                     Activate your plan by contributing $110 in TCC2.O tokens (from private sale or PancakeSwap).
 //                   </p>
 //                 </div>
 //               </div>
@@ -266,19 +266,19 @@
 //       </section>
 
 
-//       {/* TCC Utility Section */}
+//       {/* TCC2.O Utility Section */}
 //       <section className="max-w-5xl mx-auto px-4 mb-20">
 //         <div className="rounded-3xl p-[2px] bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500">
 //           <div className="bg-black rounded-[inherit] p-8 sm:p-10 lg:p-12 border border-black">
 //             <h2 className="text-4xl font-extrabold text-white mb-6 flex items-center gap-3">
 //               <DollarSign className="w-8 h-8 text-yellow-400" />
 //               <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 text-transparent bg-clip-text">
-//                 The Power of TCC Utility
+//                 The Power of TCC2.O Utility
 //               </span>
 //             </h2>
 
 //             <p className="text-lg text-neutral-300 mb-8">
-//               TCC isn't just another token — it's a utility-first asset built for real-world use. Whether you're shopping, swapping, gaming, or investing — TCC puts utility at your fingertips.
+//               TCC2.O isn't just another token — it's a utility-first asset built for real-world use. Whether you're shopping, swapping, gaming, or investing — TCC2.O puts utility at your fingertips.
 //             </p>
 
 //             <div className="grid md:grid-cols-2 gap-6">
@@ -289,7 +289,7 @@
 //                 },
 //                 {
 //                   icon: <RefreshCw className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
-//                   text: "Swap on PancakeSwap for TCC or any other major token.",
+//                   text: "Swap on PancakeSwap for TCC2.O or any other major token.",
 //                 },
 //                 {
 //                   icon: <Gamepad className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
@@ -297,7 +297,7 @@
 //                 },
 //                 {
 //                   icon: <Smartphone className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
-//                   text: "Stake, spend, or trade — full freedom with your TCC.",
+//                   text: "Stake, spend, or trade — full freedom with your TCC2.O.",
 //                 },
 //               ].map((item, idx) => (
 //                 <div key={idx} className="flex items-start gap-4">
@@ -310,7 +310,7 @@
 //             <div className="mt-10 rounded-xl p-[2px] bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500">
 //               <div className="bg-gray-900 rounded-[inherit] text-center p-6 sm:p-8 border border-yellow-500/20">
 //                 <p className="text-xl font-semibold text-white">
-//                   TCC is your all-in-one digital utility asset for the real world.
+//                   TCC2.O is your all-in-one digital utility asset for the real world.
 //                 </p>
 //               </div>
 //             </div>
@@ -352,7 +352,7 @@
 //                 {
 //                   icon: <Shield className="w-6 h-6 text-yellow-500 mt-1" />,
 //                   title: "Secure",
-//                   desc: "TCC/USD price feed via Chainlink Oracle. Fully audited.",
+//                   desc: "TCC2.O/USD price feed via Chainlink Oracle. Fully audited.",
 //                 },
 //                 {
 //                   icon: <History className="w-6 h-6 text-yellow-500 mt-1" />,
@@ -422,7 +422,7 @@
 //             <div className="grid md:grid-cols-2 gap-6 mb-8">
 //               <div className="flex items-center gap-3 text-lg text-gray-300">
 //                 <CheckCircle className="w-6 h-6 text-yellow-500" />
-//                 <p>Buy TCC Tokens from PancakeSwap or Exchange</p>
+//                 <p>Buy TCC2.O Tokens from PancakeSwap or Exchange</p>
 //               </div>
 //               <div className="flex items-center gap-3 text-lg text-gray-300">
 //                 <CheckCircle className="w-6 h-6 text-yellow-500" />
@@ -533,7 +533,7 @@ function App() {
             <span className="text-yellow-500">CHAMP</span> TRADE
           </h1>
         </div>
-        <p className="text-2xl text-gray-300 font-semibold">Powered by TCC 2.0</p>
+        <p className="text-2xl text-gray-300 font-semibold">Powered by TCC2.O</p>
         <p className="text-xl text-yellow-500 mt-2 italic">Earn like a Champion</p>
       </header>
 
@@ -618,9 +618,9 @@ function App() {
                   <span className="text-xl font-bold text-yellow-500">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Join with $110 worth of TCC</h3>
+                  <h3 className="text-xl font-semibold text-white mb-2">Join with $110 worth of TCC2.O</h3>
                   <p className="text-lg text-gray-300">
-                    Activate your plan by contributing $110 in TCC tokens available on decentralized exchanges.
+                    Activate your plan by contributing $110 in TCC2.O tokens available on decentralized exchanges.
                   </p>
                 </div>
               </div>
@@ -722,18 +722,18 @@ function App() {
         </div>
       </section>
 
-      {/* TCC Utility Section */}
+      {/* TCC2.O Utility Section */}
       <section className="max-w-5xl mx-auto px-4 mb-20">
         <div className="rounded-3xl p-[2px] bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500">
           <div className="bg-black rounded-[inherit] p-8 sm:p-10 lg:p-12 border border-black">
             <h2 className="text-4xl font-extrabold text-white mb-6 flex items-center gap-3">
               <DollarSign className="w-8 h-8 text-yellow-400" />
               <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 text-transparent bg-clip-text">
-                The Power of TCC Utility
+                The Power of TCC2.O Utility
               </span>
             </h2>
             <p className="text-lg text-neutral-300 mb-8">
-              TCC isn't just another token — it's a utility-first asset built for real-world use. Whether you're shopping, swapping, gaming, or investing — TCC puts utility at your fingertips.
+              TCC2.O isn't just another token — it's a utility-first asset built for real-world use. Whether you're shopping, swapping, gaming, or investing — TCC2.O puts utility at your fingertips.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {[
@@ -743,7 +743,7 @@ function App() {
                 },
                 {
                   icon: <RefreshCw className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
-                  text: "Swap on PancakeSwap for TCC or any other major token.",
+                  text: "Swap on PancakeSwap for TCC2.O or any other major token.",
                 },
                 {
                   icon: <Gamepad className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
@@ -751,7 +751,7 @@ function App() {
                 },
                 {
                   icon: <Smartphone className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />,
-                  text: "Stake, spend, or trade — full freedom with your TCC.",
+                  text: "Stake, spend, or trade — full freedom with your TCC2.O.",
                 },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4">
@@ -763,7 +763,7 @@ function App() {
             <div className="mt-10 rounded-xl p-[2px] bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500">
               <div className="bg-gray-900 rounded-[inherit] text-center p-6 sm:p-8 border border-yellow-500/20">
                 <p className="text-xl font-semibold text-white">
-                  TCC is your all-in-one digital utility asset for the real world.
+                  TCC2.O is your all-in-one digital utility asset for the real world.
                 </p>
               </div>
             </div>
@@ -799,7 +799,7 @@ function App() {
                 {
                   icon: <Shield className="w-6 h-6 text-yellow-500 mt-1" />,
                   title: "Secure",
-                  desc: "TCC/USD price feed via Chainlink Oracle. Fully audited.",
+                  desc: "TCC2.O/USD price feed via Chainlink Oracle. Fully audited.",
                 },
                 {
                   icon: <History className="w-6 h-6 text-yellow-500 mt-1" />,
@@ -865,7 +865,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-center gap-3 text-lg text-gray-300">
                 <CheckCircle className="w-6 h-6 text-yellow-500" />
-                <p>Buy TCC Tokens from PancakeSwap or Exchange</p>
+                <p>Buy TCC2.O Tokens from PancakeSwap or Exchange</p>
               </div>
               <div className="flex items-center gap-3 text-lg text-gray-300">
                 <CheckCircle className="w-6 h-6 text-yellow-500" />

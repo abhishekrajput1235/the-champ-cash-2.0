@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-neutral-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            TCC 2.0 isn't just a project—it's a movement. Reborn from the global success of ChampCash, 
+            TCC2.0 isn't just a project—it's a movement. Reborn from the global success of the <span className='text-yellow-500'>CHAMP </span>CASH, 
             this new chapter brings blockchain technology, community power, and financial opportunity 
             into one seamless platform.
           </p>

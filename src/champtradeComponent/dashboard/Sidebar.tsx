@@ -46,7 +46,7 @@ function Sidebar() {
       items: [
         { icon: RefreshCw, label: 'My Champ Trade', path: '/champ-trade-dashboard/reinvestment' },
         { icon: WalletIcon, label: 'Claim', path: '/champ-trade-dashboard/withdraw' },
-        { icon: Coins, label: 'Buy TCC 2.O', path: '/champ-trade-dashboard/buy-tokens' },
+        { icon: Coins, label: 'Buy TCC2.O', path: '/champ-trade-dashboard/buy-tokens' },
         { icon: HelpCircle, label: 'Faq', path: '/champ-trade-dashboard/Faq' },
       ]
     },

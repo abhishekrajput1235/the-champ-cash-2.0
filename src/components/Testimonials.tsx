@@ -13,7 +13,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    content: "TCC20's innovative solutions have transformed our entire workflow. Their tools are intuitive, powerful, and have dramatically improved our efficiency.",
+    content: "TCC2.O's innovative solutions have transformed our entire workflow. Their tools are intuitive, powerful, and have dramatically improved our efficiency.",
     author: "Sarah Johnson",
     position: "CTO",
     company: "Innovate Tech",
@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    content: "Implementing TCC20's platform was the best business decision we made last year. The ROI has been impressive and the support team is exceptional.",
+    content: "Implementing TCC2.O's platform was the best business decision we made last year. The ROI has been impressive and the support team is exceptional.",
     author: "Michael Chen",
     position: "Director of Operations",
     company: "Global Solutions",
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    content: "After struggling with multiple vendors, TCC20 provided the comprehensive solution we needed. Secure, scalable, and remarkably easy to use.",
+    content: "After struggling with multiple vendors, TCC2.O provided the comprehensive solution we needed. Secure, scalable, and remarkably easy to use.",
     author: "Jennifer Rivera",
     position: "VP of Technology",
     company: "Enterprise Corp",

@@ -36,7 +36,7 @@ const IncomePlan: React.FC = () => {
       >
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-400">
-            TCC Income Plan
+            THE CHAMP TRADE
           </h2>
           <p className="text-xl text-neutral-300">
             A sustainable earning model designed for long-term growth and community rewards
@@ -56,7 +56,7 @@ const IncomePlan: React.FC = () => {
               <li className="flex items-start">
                 <Timer className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  Invest $110 in TCC and receive $0.50 worth of TCC daily
+                  Invest $110 in TCC2.O and receive $0.50 worth of TCC2.O daily
                 </p>
               </li>
               <li className="flex items-start">
@@ -68,7 +68,7 @@ const IncomePlan: React.FC = () => {
               <li className="flex items-start">
                 <DollarSign className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  System restarts after collecting $100 worth of TCC
+                  System restarts after collecting $100 worth of TCC2.O
                 </p>
               </li>
             </ul>
@@ -80,25 +80,25 @@ const IncomePlan: React.FC = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-yellow-500/20 to-amber-400/20 rounded-full flex items-center justify-center mr-4">
                 <Users className="w-6 h-6 text-yellow-500" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Referral Income (L1-L6)</h3>
+              <h3 className="text-2xl font-bold text-white">Referral Bonus(L1-L6)</h3>
             </div>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <DollarSign className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  Earn $0.20 worth of TCC daily per active referral across 6 levels
+                  Earn $0.20 worth of TCC2.O daily per active referral across 6 levels
                 </p>
               </li>
               <li className="flex items-start">
                 <Timer className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                  Daily cap of $1800 worth of TCC per user
+                  Daily cap of $1800 worth of TCC2.O per user
                 </p>
               </li>
               <li className="flex items-start">
                 <RefreshCw className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                 <p className="text-neutral-300">
-                The value of 1 TCC is based on its current price on PancakeSwap.
+                The value of 1 TCC2.O is based on its current price on PancakeSwap.
                 </p>
               </li>
             </ul>
@@ -111,7 +111,7 @@ const IncomePlan: React.FC = () => {
             Sustainable Growth Model
           </h4>
           <p className="text-neutral-300">
-            Our income plan is designed to promote active user participation and long-term sustainability,
+            Our growth plan is designed to promote active user participation and long-term sustainability,
             rewarding both solo users and team builders. The decreasing reward structure and cycle system
             ensures platform longevity while maintaining attractive earning potential.
           </p>

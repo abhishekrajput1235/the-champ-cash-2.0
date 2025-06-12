@@ -40,7 +40,7 @@ const LatestTransactionsPanel: React.FC = () => {
       Math.floor(Math.random() * 4)
     ] as Transaction["type"],
     amount: Math.floor(Math.random() * 1000) + 1,
-    token: "TCC",
+    token: "TCC2.O",
     status: ["completed", "pending", "failed"][
       Math.floor(Math.random() * 3)
     ] as Transaction["status"],
@@ -54,11 +54,11 @@ const LatestTransactionsPanel: React.FC = () => {
 
   const purchases: Purchase[] = Array.from({ length: 50 }, (_, i) => ({
     id: `PUR-${i + 1}`,
-    item: ["TCC Starter Pack", "VIP Membership", "Bonus Tokens", "Premium Package"][
+    item: ["TCC2.O Starter Pack", "VIP Membership", "Bonus Tokens", "Premium Package"][
       Math.floor(Math.random() * 4)
     ],
     amount: Math.floor(Math.random() * 1000) + 1,
-    token: "TCC",
+    token: "TCC2.O",
     status: ["completed", "pending", "failed"][
       Math.floor(Math.random() * 3)
     ] as Purchase["status"],

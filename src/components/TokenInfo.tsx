@@ -126,7 +126,7 @@ const TokenInfo: React.FC = () => {
       >
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-400">
-            TCC2 Token: Powering the Ecosystem
+            TCC2.O Token: Powering the Ecosystem
           </h2>
           <p className="text-xl text-neutral-300">
             The foundation of our decentralized economy
@@ -143,19 +143,24 @@ const TokenInfo: React.FC = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center border-b border-yellow-500/10 pb-2">
                 <span className="text-neutral-300">Token Name</span>
-                <span className="text-white font-medium">TCC 2.0</span>
+                <span className="text-white font-medium">TCC2.0</span>
               </div>
               <div className="flex justify-between items-center border-b border-yellow-500/10 pb-2">
                 <span className="text-neutral-300">Symbol</span>
-                <span className="text-white font-medium">TCC2</span>
+                <span className="text-white font-medium">TCC2.0</span>
               </div>
               <div className="flex justify-between items-center border-b border-yellow-500/10 pb-2">
                 <span className="text-neutral-300">Network</span>
                 <span className="text-white font-medium">Binance Smart Chain (BEP-20)</span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center border-b border-yellow-500/10 pb-2">
                 <span className="text-neutral-300">Total Supply</span>
-                <span className="text-white font-medium">210,000,000 TCC</span>
+                <span className="text-white font-medium">210,000,000 TCC2.0</span>
+              </div>
+              <div className="flex justify-between items-center border-b border-yellow-500/10 pb-2">
+                <span className="text-neutral-300">Token Address</span>
+                <span className="text-white font-medium"><a className=" hover:text-blue-500" href="https://bscscan.com/token/0xad771bac597efac136929195985577da0c40e557?a=0xad771bac597efac136929195985577da0c40e557" target='_blank'>0xad771bac597efac136929195985577da0c40e557</a></span>
+                
               </div>
             </div>
           </div>
@@ -192,7 +197,7 @@ const TokenInfo: React.FC = () => {
         </div>
 
         {/* Referral Bonuses */}
-        <div className="bg-yellow-500/10 rounded-xl p-6 max-w-3xl mx-auto">
+        {/* <div className="bg-yellow-500/10 rounded-xl p-6 max-w-3xl mx-auto">
           <div className="flex items-center mb-4">
             <Share2 className="w-6 h-6 text-yellow-500 mr-3" />
             <h4 className="text-lg font-semibold text-white">Referral Bonuses</h4>
@@ -201,7 +206,7 @@ const TokenInfo: React.FC = () => {
             Earn 8% direct referral bonus and 2% upline bonus, automatically distributed through our
             smart contract system. All pricing is based on TCC/USD Chainlink feed for real-time accuracy.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

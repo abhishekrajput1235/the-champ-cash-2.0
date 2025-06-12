@@ -24,7 +24,7 @@ function LandingPage() {
             <span className="text-yellow-500">CHAMP</span> TRADE
           </h1>
         </div>
-        <p className="text-lg sm:text-xl text-gray-300 font-medium mb-1">Powered by TCC 2.0</p>
+        <p className="text-lg sm:text-xl text-gray-300 font-medium mb-1">Powered by TCC2.O</p>
         <p className="text-yellow-500 italic text-md sm:text-lg">Earn Like a Champion</p>
       </header>
 

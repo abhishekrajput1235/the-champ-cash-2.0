@@ -78,7 +78,7 @@ const OurStory: React.FC = () => {
   >
     <div className="text-center max-w-3xl mx-auto mb-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-amber-400">
-        Our Story: From ChampCash to TCC 2.0
+        Our Story: From <span >CHAMP</span><span className='text-white'>CASH</span> to TCC 2.0
       </h2>
       <p className="text-xl text-neutral-300">
         A journey of transformation, innovation, and community empowerment

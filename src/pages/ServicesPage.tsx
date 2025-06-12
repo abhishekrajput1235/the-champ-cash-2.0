@@ -14,7 +14,7 @@
 
 // import 'swiper/css';
 // import 'swiper/css/pagination';
-// import tcc2 from '../images/tcc2.png'
+// import TCC2.O2 from '../images/TCC2.O2.png'
 // import { Navigate } from 'react-router-dom';
 // const ServicesPage: React.FC = () => {
   
@@ -22,7 +22,7 @@
 //     {
 //       icon: <Coins className="w-8 h-8 text-yellow-400" />,
 //       title: "Token Presale & Tiered Investment",
-//       description: "Get early access to TCC tokens at preferential rates through our tiered investment system.",
+//       description: "Get early access to TCC2.O tokens at preferential rates through our tiered investment system.",
 //       features: [
 //         "Join the presale and get early access at discounted rates",
 //         "Three pricing tiers ensure fair opportunity and incentive",
@@ -33,7 +33,7 @@
 //       title: "Smart Staking Contracts",
 //       description: "Secure and transparent staking solutions for long-term value creation.",
 //       features: [
-//         "Stake TCC tokens and earn daily rewards based on lock duration",
+//         "Stake TCC2.O tokens and earn daily rewards based on lock duration",
 //         "Transparent smart contracts audited and viewable by the public",
 //       ],
 //     },
@@ -53,17 +53,17 @@
 //       description: "Build and grow your network while earning substantial rewards.",
 //       features: [
 //         "Earn $0.20/day per team member from Level 1 to Level 6",
-//         "Up to $1750/day reward cap",
+//         "Up to $1800/day reward cap",
 //         "Real-time dashboard tracking and ranking",
 //       ],
 //     },
 //     {
 //       icon: <ShoppingCart className="w-8 h-8 text-yellow-400" />,
 //       title: "Real-World Use Cases",
-//       description: "Utilize TCC tokens across various platforms and services.",
+//       description: "Utilize TCC2.O tokens across various platforms and services.",
 //       features: [
-//         "Shop using TCC on e-commerce platforms",
-//         "Swap TCC on PancakeSwap and other DEXs",
+//         "Shop using TCC2.O on e-commerce platforms",
+//         "Swap TCC2.O on PancakeSwap and other DEXs",
 //         "Future merchant and in-game utility integrations",
 //       ],
 //     },
@@ -222,7 +222,7 @@
 //           <div className="md:w-1/2 relative group perspective-[1200px]">
 //             <div className="w-full ">
 //               <img
-//                 src={tcc2}
+//                 src={TCC2.O2}
 //                 alt="Digital Assets"
 //                 className="rounded-2xl w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
 //               />
@@ -314,7 +314,7 @@ import { useNavigate } from 'react-router-dom';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import tcc2 from '../images/tcc2.png';
+import TCC from '../images/tcc2.png';
 
 const ServicesPage: React.FC = () => {
   const navigate = useNavigate();
@@ -324,7 +324,7 @@ const ServicesPage: React.FC = () => {
       icon: <Coins className="w-8 h-8 text-yellow-400" />,
       title: 'Token Presale & Tiered Investment',
       description:
-        'Get early access to TCC tokens at preferential rates through our tiered investment system.',
+        'Get early access to TCC2.O tokens at preferential rates through our tiered investment system.',
       features: [
         'Join the presale and get early access at discounted rates',
         'Three pricing tiers ensure fair opportunity and incentive',
@@ -335,7 +335,7 @@ const ServicesPage: React.FC = () => {
       title: 'Smart Staking Contracts',
       description: 'Secure and transparent staking solutions for long-term value creation.',
       features: [
-        'Stake TCC tokens and earn daily rewards based on lock duration',
+        'Stake TCC2.O tokens and earn daily rewards based on lock duration',
         'Transparent smart contracts audited and viewable by the public',
       ],
     },
@@ -355,17 +355,17 @@ const ServicesPage: React.FC = () => {
       description: 'Build and grow your network while earning substantial rewards.',
       features: [
         'Earn $0.20/day per team member from Level 1 to Level 6',
-        'Up to $1750/day reward cap',
+        'Up to $1800/day reward cap',
         'Real-time dashboard tracking and ranking',
       ],
     },
     {
       icon: <ShoppingCart className="w-8 h-8 text-yellow-400" />,
       title: 'Real-World Use Cases',
-      description: 'Utilize TCC tokens across various platforms and services.',
+      description: 'Utilize TCC2.O tokens across various platforms and services.',
       features: [
-        'Shop using TCC on e-commerce platforms',
-        'Swap TCC on PancakeSwap and other DEXs',
+        'Shop using TCC2.O on e-commerce platforms',
+        'Swap TCC2.O on PancakeSwap and other DEXs',
         'Future merchant and in-game utility integrations',
       ],
     },
@@ -521,7 +521,7 @@ const ServicesPage: React.FC = () => {
           <div className="md:w-1/2 relative group perspective-[1200px]">
             <div className="w-full">
               <img
-                src={tcc2}
+                src={TCC}
                 alt="Digital Assets"
                 className="rounded-2xl w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
